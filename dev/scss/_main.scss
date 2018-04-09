@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .container {
+    .content {
+      flex: 3;
+      margin-right: $freeSpace;
+      margin-bottom: $freeSpace;
+      padding: $freeSpace;
+      min-height: 100px;
+      border: 1px solid $greyColor;
+    }
+
+    .sidebar {
+      flex: 1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .box {
+        margin-bottom: $freeSpace;
+        padding: $freeSpace;
+        width: 100%;
+        min-height: 100px;
+        border: 1px solid $greyColor;
+      }
+    }
+  }
+}
