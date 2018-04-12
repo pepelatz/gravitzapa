@@ -10,6 +10,7 @@ $footerHeight: 49px;
 @import 'reset';
 @import 'grid';
 @import 'typography';
+@import 'forms';
 
 html {
   display: flex;
@@ -22,10 +23,12 @@ body {
   flex-direction: column;
   flex: auto;
   color: $blackColor;
-  background-color: $whiteColor;
+  background-color: lighten($greyColor, 7);
   padding-top: $headerHeight + $freeSpace;
 }
 
 @import 'header';
 @import 'main';
 @import 'footer';
+@import 'components/post';
+@import 'components/auth';
